@@ -1,0 +1,28 @@
+.todo-app-container {
+    height: 100vh;
+    /* background-color: black; */
+    padding: 25px;
+    color: #fff;
+}
+
+#todo-input {
+    outline: none;
+    width: 500px;
+    height: 30px;
+    padding: 5px;
+    border-radius: 8px;
+}
+
+.add-todo-btn {
+    background-color: #0c968d;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: none;
+    align-items: center;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    margin-left: 15px;
+    cursor: pointer;
+}

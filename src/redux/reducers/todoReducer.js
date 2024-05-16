@@ -25,6 +25,16 @@ const todoReducer = (state = initialState, action) => {
         ],
         inputText: "",
       };
+
+    case actionTypes.DELETE_TODO:
+      return {
+        ...state,
+        todoList: [
+          ...state.todoList.slice(0, action.payload),
+          ...state.todoList.slice(action.payload + 1),
+        ],
+      };
+
     default:
       return state;
   }

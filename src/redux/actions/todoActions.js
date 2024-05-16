@@ -13,3 +13,10 @@ export const addTodo = (text) => {
     payload: text,
   };
 };
+
+export const deleteTodo = (todoIndex) => {
+  return {
+    type: actionTypes.DELETE_TODO,
+    payload: todoIndex,
+  };
+};
